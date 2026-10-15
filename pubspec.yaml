@@ -1,0 +1,26 @@
+name: post_reader_favorites
+description: Post Reader & Favorites - fetches posts from JSONPlaceholder and saves favorites locally with Hive.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.2          # REST requests (GET / POST)
+  hive: ^2.2.3          # local NoSQL storage
+  hive_flutter: ^1.1.0  # Hive.initFlutter() + box.listenable()
+  google_fonts: ^6.2.1  # Inter + Playfair Display
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
